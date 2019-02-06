@@ -7,9 +7,17 @@
 $ git clone ...
 $ cd project
 $ ./gradlew build
+$ jar tf ./build/libs/org.naumen.jar
+META-INF/
+META-INF/MANIFEST.MF
+org/
+org/naumen/
+org/naumen/PuzzleResolver.class
+org/naumen/Node.class
+org/naumen/Puzzle.class
 ```
 
-*target - project/build/libs/org.naumen.jar*
+**target - project/build/libs/org.naumen.jar**
 
 ```java
 import org.naumen.Puzzle;
