@@ -6,10 +6,10 @@
 ```sh
 $ git clone ...
 $ cd project
-$ ./gralew build
+$ ./gradlew build
 ```
 
-target - project/build/libs/org.naumen.jar
+*target - project/build/libs/org.naumen.jar*
 
 ```java
 import org.naumen.Puzzle;

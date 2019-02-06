@@ -39,7 +39,7 @@ public class Puzzle implements PuzzleResolver {
     public int[] resolve(int[] start) {
         Map<String, String> visited = searchState(pattern, toGraph(start, pattern));
         List<String> path = shortestPath(visited, pattern);
-        return reduce(path);
+        return moves(path);
     }
 
     static public List<String> shortestPath(Map<String, String> visited, Node[] pattern) {
@@ -77,7 +77,7 @@ public class Puzzle implements PuzzleResolver {
         return visited;
     }
 
-    static public int[] reduce(List<String> path) {
+    static public int[] moves(List<String> path) {
         int[] steps = new int[path.size() - 1];
         for (int i = 1; i < path.size(); i++) {
             int pos = indexOfSpot(path.get(i - 1));

@@ -21,14 +21,14 @@ public class PuzzleTest {
         assertEquals(res3.length, 0);
     }
 
-    @Test public void testReducer() {
+    @Test public void testMoves() {
         List<String> path = new LinkedList<>();
         path.add("1203");
         path.add("1023");
         path.add("0123");
         path.add("2301");
 
-        int[] steps = Puzzle.reduce(path);
+        int[] steps = Puzzle.moves(path);
         assertEquals(steps.length, 3);
         assertEquals(steps[0], 2);
         assertEquals(steps[1], 1);
@@ -53,7 +53,7 @@ public class PuzzleTest {
         );
     }
 
-    @Test public void testGraph() {
+    @Test public void testToGraph() {
         String input = "21340567";
         char[] elems = input.toCharArray();
         Node[] graph =  Puzzle.toGraph(input, Puzzle.pattern);
