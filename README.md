@@ -1,6 +1,12 @@
 # Puzzle
 
 
+### The point of ...
+
+Find the least number of moves.
+
+![Undirected and unweighted graph](./pattern.png)
+
 ### How to use
 
 ```sh

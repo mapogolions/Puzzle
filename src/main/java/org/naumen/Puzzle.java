@@ -124,7 +124,7 @@ public class Puzzle implements PuzzleResolver {
         for (Node node : graph) {
             tmpl.append(node.getValue());
         }
-        return tmpl.toString().trim();
+        return tmpl.toString();
     }
 
     static public boolean coincidence(int[] seq1, int[] seq2) {
@@ -145,7 +145,7 @@ public class Puzzle implements PuzzleResolver {
 
     static public Node[] toGraph(String src, Node[] pattern) throws IllegalArgumentException {
         char[] values = src.toCharArray();
-        if (values.length != pattern.length) 
+        if (values.length != pattern.length)
             throw new IllegalArgumentException("Short graph description");
         Node[] state = new Node[pattern.length];
         for (int i = 0; i < pattern.length; i++) {
@@ -156,7 +156,7 @@ public class Puzzle implements PuzzleResolver {
     }
 
     static public Node[] toGraph(int[] seq, Node[] pattern) throws IllegalArgumentException {
-        if (seq.length != pattern.length) 
+        if (seq.length != pattern.length)
             throw new  IllegalArgumentException("Short sequence");
         Node[] state = new Node[pattern.length];
         for (int i = 0; i < seq.length; i++) {
