@@ -5,7 +5,7 @@
 
 Find the least number of moves.
 
-![Undirected and unweighted graph](./pattern.png)
+![Undirected and unweighted graph](./pattern.jpeg)
 
 ### How to use
 
